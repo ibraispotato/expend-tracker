@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(300deg, #02328b, #7c0101, #002a3a);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  color: white;
+  
+}
+.up{
+  margin-bottom: 20px;
+}
+.texts{
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.numbers{
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+}
+.stick{
+    border: 1px solid rgb(49, 47, 47);
+    height: 20px;
+}
+.numINCOME{
+  font-size: 18px;
+  color: rgb(2, 160, 2);
+}
+.numEXPENSE{
+  color: red;
+  font-size: 18px;
+}
+.numbers{
+  margin-bottom: 20px;
+}
+.his{
+  margin-bottom: 10px;
+}
+.formes{
+  background: white;
+  color: black;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 8px;
+  font-size: 15px;
+  box-shadow: 25px 19px 22px -13px rgba(0,0,0,0.45),
+25px 0px 20px -20px rgba(0,0,0,0.45);
+font-weight: 700;
+}
+.widths{
+  border: 1px solid rgb(68, 66, 66);
+  width: 240px;
+  margin-bottom: 15px;
+}
+.add{
+  margin-bottom: 10px;
+}
+
+input{
+  margin: 10px 0 10px 0;
+  padding: 5px 10px;
+  width: 105%;
+  outline: none;
+  border: none;
+}
+.btn{
+  margin-top: 10px;
+  padding: 9px 20px;
+  width: 105%;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  background: #7c0101;
+  border: none;
+  outline: none;
+  box-shadow: 25px 19px 22px -13px rgba(0,0,0,0.45),
+  25px 0px 20px -20px rgba(0,0,0,0.45);
+}
+
+.green{
+  border-right: 6px solid green;
+}
+.red{
+  border-right: 6px solid red;
+}
+.trash{
+  color: red;
+  cursor: pointer;
+}
+/* .alls{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+} */
+.re{
+  margin-bottom: 10px;
+}
