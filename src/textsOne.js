@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import { click } from '@testing-library/user-event/dist/click';
 import Quote from "./texts"
-function TodoText({ addTexts, setNum }) {
+function ClickOne({ addTexts, setNum }) {
     const [comeOut, setComeOut] = useState("")
     const [num, setNUM] = useState()
     useEffect(() => {
@@ -33,8 +33,8 @@ function TodoText({ addTexts, setNum }) {
                 <p className='ame'>Amount</p>
                 <input type='number' onChange={(e)=>{setNUM(e.target.value)}} value={num} placeholder='Enter amount...'/>
             </div>
-            <button onClick={btn} className='btn'>Add transaction</button>
+            <button onClick={num===0|| comeOut===""? console.log("err"): btn} className='btn'>Add transaction</button>
         </div>
     )
 }
-export default TodoText
+export default ClickOne
