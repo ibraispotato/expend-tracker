@@ -5,7 +5,10 @@ import Nums from "./nums"
 import { v4 as uuidv4 } from 'uuid'
 uuidv4()
 function Head() {
-  const [texts, setTexts] = useState([])
+  const [texts, setTexts] = useState(JSON.parse(localStorage.getItem("texts"))||[])
+  useEffect(() => {
+    localStorage.setItem("texts", JSON.stringify(texts))
+  },[texts])
   const [nums, setNum] = useState()
     
   const addTexts = (texto) => {
